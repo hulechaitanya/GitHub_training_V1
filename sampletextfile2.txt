@@ -1,2 +1,1 @@
 this is sample file 2
-Git reset 2
