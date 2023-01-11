@@ -113,7 +113,7 @@
               <artifactId>taglist-maven-plugin</artifactId>
               <version>2.4</version>
             </plugin>
-          </reporting></plugins>
+          </plugins></reporting>
         </configuration>
       </plugin>
       
