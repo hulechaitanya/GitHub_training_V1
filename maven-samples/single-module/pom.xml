@@ -65,7 +65,7 @@
         <artifactId>maven-site-plugin</artifactId>
         <version>3.0</version>
         <configuration>
-          <reporting><plugins>
+          <plugins>
             <plugin>
               <artifactId>maven-checkstyle-plugin</artifactId>
               <version>2.8</version>
@@ -113,7 +113,7 @@
               <artifactId>taglist-maven-plugin</artifactId>
               <version>2.4</version>
             </plugin>
-          </plugins></reporting>
+          </plugins>
         </configuration>
       </plugin>
       
