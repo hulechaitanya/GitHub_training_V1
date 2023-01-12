@@ -40,15 +40,23 @@
       <plugin>  
             <!-- Build an executable JAR -->  
             <groupId>org.apache.maven.plugins</groupId>  
-            <artifactId>maven-jar-plugin</artifactId>  
-            <version>3.1.0</version>  
-            <configuration>  
-                <archive>  
-                    <manifest>  
-                        <mainClass>com.example.Greeter</mainClass>  
-                    </manifest>  
-                </archive>  
-            </configuration>  
+            <artifactId>maven-enforcer-plugin</artifactId>
+            <version>3.1.0</version>
+            <executions>
+              <execution>
+               <id>enforce-maven</id>
+               <goals>
+                <goal>enforce</goal>
+               </goals>
+               <configuration>
+                 <rules>
+                  <requireMavenVersion>
+                  <version>3.0</version>
+                  </requireMavenVersion>
+                 </rules>    
+               </configuration>
+              </execution>
+            </executions>  
         </plugin> 
 
       <plugin>
